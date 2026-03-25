@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}" />
+  </head>
+
+  <div id="topBar">
+    <p>
+        ImageHere
+    </p>
+
+    <nav>
+        <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('shop') }}">Shop</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Floral Services for Every Occasion</h1>
+            <p>Thoughtfully designed arrangements for life's most special moments, crafted with elegance and care.</p>
+        </div>
+    </div>
+
+    <div class="services-section">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+        
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/cardPlace.png') }}" alt="Custom Arrangements">
+            <h3>Custom Floral Arrangements</h3>
+            <p>vscodefiller Unique, handcrafted designs tailored to your style and occasion.</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/cardPlace.png') }}" alt="Weddings">
+            <h3>Wedding Flowers</h3>
+            <p>vscodefiller Elegant floral designs to make your special day unforgettable.</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/cardPlace.png') }}" alt="Events">
+            <h3>Event Decor</h3>
+            <p>vscodefiller Beautiful floral setups for parties, corporate events, and more.</p>
+        </div>
+
+    </div>
+</div>
+
+  <body>
+    <div>
+
+    </div>
+  </body>
+</html>
