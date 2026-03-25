@@ -3,42 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Ms. Kreation</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-        }
+        } /* <<< THIS WAS MISSING */
+
         header {
-            background-color: #4CAF50;
+            background-color: #333;
+            padding: 10px;
+            z-index: 2;
+            position: relative;
+        }
+
+        header h1 {
             color: white;
-            padding: 1rem 0;
+            margin: 0;
         }
+
+        h2 {
+            font-family: Verdana, Arial, Tahoma, sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
         main {
-            padding: 2rem;
+            padding: 0;
+            margin: 0;
         }
+
         footer {
             background-color: #333;
             color: white;
-            padding: 1rem 0;
-            position: absolute;
-            bottom: 0;
+            text-align: center;
+            padding: 10px;
+        }
+
+.bg-half {
+    background-image: url("test/background%20flowers.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+        .hero {
             width: 100%;
+            min-height: 300px;
+            background-image: url("test/background flowers.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero .overlay {
+            min-height: inherit;
+            background: rgba(0,0,0,0.35);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 40px;
+        }
+
+        p {
+            font-family: Verdana, Arial, Tahoma, sans-serif;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Welcome to the Test Page</h1>
+        <h1>Ms. Kreation</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="review.html">Review</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <p>This is a simple test page for the Flower Shop Web project.</p>
+        <section class="hero">
+            <div class="bg-half">
+                <h2>Floral Is Greeting for Every Occasion</h2>
+                <p>Your one-stop shop for all your floral needs!</p>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Flower Shop Web</p>
+        <p>&copy; 2024 Ms. Kreation. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
