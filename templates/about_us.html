@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#d1c5b4",
+                        "on-secondary-fixed-variant": "#584324",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#3b3c2b",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "on-background": "#1b1c1c",
+                        "primary-fixed-dim": "#e9c176",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-fixed": "#1b1d0e",
+                        "secondary": "#725a39",
+                        "on-secondary-fixed": "#281801",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#e9c176",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary-container": "#765f3d",
+                        "surface-tint": "#775a19",
+                        "background": "#fbf9f8",
+                        "secondary-fixed-dim": "#e1c299",
+                        "primary-container": "#c5a059",
+                        "tertiary-fixed": "#e4e4cc",
+                        "outline": "#7f7667",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fbdbb0",
+                        "secondary-fixed": "#feddb3",
+                        "on-tertiary-fixed-variant": "#474836",
+                        "surface-container-high": "#eae8e7",
+                        "tertiary-container": "#a6a791",
+                        "surface-variant": "#e4e2e1",
+                        "primary": "#775a19",
+                        "surface-container-highest": "#e4e2e1",
+                        "primary-fixed": "#ffdea5",
+                        "tertiary-fixed-dim": "#c8c8b0",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#4e4639",
+                        "on-primary-container": "#4e3700",
+                        "on-primary-fixed": "#261900",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface-dim": "#dcd9d9",
+                        "surface-bright": "#fbf9f8",
+                        "inverse-on-surface": "#f3f0f0",
+                        "tertiary": "#5e604d",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["Noto Serif"],
+                        "label-caps": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 248, 0.4), rgba(251, 249, 248, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+<div class="flex justify-between items-center px-8 md:px-16 py-6 max-w-[1440px] mx-auto">
+<img src="/assets/logo.png" alt="Ms. Kreations Flowers" class="h-10 w-auto">
+<div class="hidden md:flex space-x-12">
+<a class="font-serif tracking-wide uppercase text-sm text-stone-500 hover:text-stone-800 transition-colors duration-300" href="#">Home</a>
+<a class="font-serif tracking-wide uppercase text-sm text-stone-500 hover:text-stone-800 transition-colors duration-300" href="#">Services</a>
+<a class="font-serif tracking-wide uppercase text-sm text-stone-500 hover:text-stone-800 transition-colors duration-300" href="#">Shop</a>
+<a class="font-serif tracking-wide uppercase text-sm text-yellow-700 border-b border-yellow-700 pb-1 transition-colors duration-300" href="#">About</a>
+<a class="font-serif tracking-wide uppercase text-sm text-stone-500 hover:text-stone-800 transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6 text-yellow-700">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80" data-icon="person">person</span>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Soft ethereal close-up of blush and cream peonies with morning sunlight filtering through silk ribbons, luxury floral aesthetic" src="https://lh3.googleusercontent.com/aida/ADBb0uhe6dPCNwzHsB1ERWBK71via9-dB0rVEba3pHXdcgCksXIDVnyROfffghOWgrSM9rLBMYnCvhdK3Wv5pCN2M5NZcob93mPdJAG-6xkVyJmFkBB13-H9g0SLoMs70-6PEqAvo1VFSywK3W86tvnot-HAFMzD5UY8nnSxpBHgPyg_Kd_HiqJIO_wem7o4AU9-06-fwpwZvMDZVvqlKMFi_8h3hXFLOBIOqlO4co4SMsR_u99dagQOzX-Qt975Ujy4fBkhX2iE9Vu0rwk"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-gutter">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">About Ms. Kreations Flowers</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Luxury floral designs created with intention, elegance, and meaning.</p>
+</div>
+</section>
+<!-- Our Story -->
+<section class="py-24 md:py-32 max-w-[1440px] mx-auto px-8 md:px-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl shadow-charcoal/5 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="High-end florist workshop with neutral ceramics, beige linens, and white dried florals on a light wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEUW9Daxt1DsiRhtQpr7rjy5AfJy71d29OaaMREYuGAdVP94lbmraJhRUK8Qk-eg7Pm2SFYuJfSI1P5zaxMf1LRdPoJcxpixUtJnfjsVduHvpa31A-ssBoB_laCCpkmZSDLrajDPY9YI2NVPlBBK454hex_UFUi13awt3fwasESMERp6nfN9rosTQIICG-Manpgv-I1NIES_FjLlX7TNYLch1ZJtufKRhh1ghFV5ofgQ7vrXEbA3s-nHrJq7I6PZfHFK0fN1yibqJl"/>
+</div>
+<div class="space-y-8">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">The Atelier</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Our Story</h2>
+<div class="space-y-6 text-on-surface-variant">
+<p class="text-body-lg">Ms. Kreations Flowers is a luxury floral brand based in the south suburbs of Chicago, born from a passion for elevated botanical artistry and meaningful connections.</p>
+<p class="text-body-lg">We believe that flowers are not just an accessory, but a medium for storytelling. Every arrangement is created with intention, drawing inspiration from natural silhouettes and refined textures to bring a sense of quiet luxury into every space.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Approach -->
+<section class="bg-surface-container-low py-24 md:py-32">
+<div class="max-w-[1280px] mx-auto px-8 md:px-16 text-center">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em] mb-4 block">Craftsmanship</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Our Approach</h2>
+<div class="max-w-3xl mx-auto">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        At Ms. Kreations Flowers, flowers are more than decoration; they are a sensory experience. We focus on soft color palettes, balanced arrangements, and high-quality blooms sourced for their longevity and unique beauty. Our process is collaborative and thoughtful, ensuring every petal serves a purpose.
+                    </p>
+</div>
+</div>
+</section>
+<!-- What We Create -->
+<section class="py-24 md:py-32 max-w-[1440px] mx-auto px-8 md:px-16">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface">What We Create</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface p-10 rounded-[1.5rem] border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="local_florist">local_florist</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Custom Bouquets</h3>
+<p class="text-on-surface-variant">Personalized floral arrangements tailored to your specific vision and color palette.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface p-10 rounded-[1.5rem] border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="celebration">celebration</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Event Flowers</h3>
+<p class="text-on-surface-variant">Elegant floral designs for birthdays, showers, and intimate social gatherings.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-10 rounded-[1.5rem] border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="favorite">favorite</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Romantic Setups</h3>
+<p class="text-on-surface-variant">Thoughtful floral details for proposals, anniversaries, and romantic evenings.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface p-10 rounded-[1.5rem] border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="wine_bar">wine_bar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Floral Bar</h3>
+<p class="text-on-surface-variant">Interactive floral experiences where guests can curate their own mini arrangements.</p>
+</div>
+</div>
+</section>
+<!-- Our Style -->
+<section class="py-24 md:py-32 max-w-[1440px] mx-auto px-8 md:px-16 border-t border-stone-200">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 space-y-8">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Visual Identity</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Our Signature Style</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our design style is soft, modern, and refined. We love neutral tones, blush accents, and an organic flow that feels effortless yet sophisticated. By excluding greens from our branding, we ensure that the natural color of our blooms remains the true hero of every piece.
+                    </p>
+</div>
+<div class="order-1 md:order-2 aspect-square rounded-[2rem] overflow-hidden shadow-xl shadow-charcoal/5 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Macro photography of delicate white rose petals with subtle beige shadows, high contrast and soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWpnHKv33qqU9THZSeAnkAqY7UttSFRmMYWRVTaqIlj5F7iMlPOiS68lnEmT0Qkrb065nEd-hoUHUd-JQ1TfH-PX-H605KT_2pLtnAytVBS0I_ionc2C8n-IeESxtkjiKIQk6hTFLH6ZKjEPDmgST0VzzCtZ7bK74sZy-DpVui30F__l1YxNym3VXWBTbg7H-bB6nbGPVUkm6o-oP9MsFahC42VoHvv35JBmjjtwrx7IF83HAlDfI333GTcfm1WnBGjTGkAMk9_i5f"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 md:py-32 bg-surface-container-low">
+<div class="max-w-3xl mx-auto text-center px-gutter">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-10">Let Us Create Something Beautiful for You</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 rounded-full font-label-caps uppercase tracking-widest hover:opacity-90 transition-all shadow-sm">
+                        Shop Flowers
+                    </button>
+<button class="border border-outline text-on-surface px-10 py-5 rounded-full font-label-caps uppercase tracking-widest hover:bg-surface-container-high transition-all">
+                        Request Custom Arrangement
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 w-full rounded-t-[2rem] border-t border-stone-200 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 md:px-16 py-20 max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-serif italic text-stone-800">Ms. Kreations Flowers</div>
+<p class="font-serif text-xs tracking-tighter text-stone-500 leading-relaxed uppercase">
+                    South Suburbs of Chicago<br/>
+                    Crafted with Intention and Elegance.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-xs text-primary uppercase tracking-[0.2em]">Contact</h4>
+<ul class="font-serif text-xs tracking-tighter text-stone-500 space-y-3">
+<li class="hover:text-yellow-600 transition-all cursor-pointer">hello@mskreations.com</li>
+<li class="hover:text-yellow-600 transition-all cursor-pointer">(708) 555-0123</li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-xs text-primary uppercase tracking-[0.2em]">Connect</h4>
+<div class="flex space-x-6 text-stone-500">
+<a class="hover:text-yellow-600 transition-all" href="#">Instagram</a>
+<a class="hover:text-yellow-600 transition-all" href="#">Pinterest</a>
+<a class="hover:text-yellow-600 transition-all" href="#">Facebook</a>
+</div>
+<div class="pt-8 font-serif text-[10px] text-stone-400 tracking-widest">
+                    © 2024 ELYSIA FLORALS. CRAFTED WITH INTENTION.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
