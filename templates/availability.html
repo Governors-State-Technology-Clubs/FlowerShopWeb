@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#feddb3",
+                        "primary-container": "#c5a059",
+                        "on-secondary-fixed": "#281801",
+                        "tertiary-container": "#a6a791",
+                        "secondary": "#725a39",
+                        "on-surface-variant": "#4e4639",
+                        "on-secondary-fixed-variant": "#584324",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed-variant": "#474836",
+                        "secondary-container": "#fbdbb0",
+                        "on-tertiary-container": "#3b3c2b",
+                        "on-background": "#1b1c1c",
+                        "surface-tint": "#775a19",
+                        "primary-fixed": "#ffdea5",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#e1c299",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container": "#f0eded",
+                        "tertiary": "#5e604d",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fbf9f8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c8b0",
+                        "primary-fixed-dim": "#e9c176",
+                        "on-tertiary-fixed": "#1b1d0e",
+                        "on-primary-container": "#4e3700",
+                        "on-secondary-container": "#765f3d",
+                        "on-primary-fixed": "#261900",
+                        "primary": "#775a19",
+                        "background": "#fbf9f8",
+                        "surface-variant": "#e4e2e1",
+                        "tertiary-fixed": "#e4e4cc",
+                        "surface-container-highest": "#e4e2e1",
+                        "outline-variant": "#d1c5b4",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e7",
+                        "inverse-primary": "#e9c176",
+                        "error": "#ba1a1a",
+                        "outline": "#7f7667",
+                        "surface": "#fbf9f8",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "inverse-on-surface": "#f3f0f0",
+                        "inverse-surface": "#303030",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Manrope"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-sm": ["Noto Serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .diagonal-line {
+            background: linear-gradient(to top left, transparent 48%, #d1c5b4 49%, #d1c5b4 51%, transparent 52%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="bg-[#FDFCF0] border-b border-[#D2B48C]/20 fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-9 md:px-16 py-3 max-w-full mx-auto">
+<div class="flex-1 flex items-center justify-center">
+<img src="/assets/logo.png" alt="Ms. Kreations Flowers" class="h-20 w-auto object-contain">
+</div>
+<nav class="hidden md:flex items-center space-x-10">
+<a class="text-[#333333] hover:text-[#C5A059] transition-colors duration-300 text-sm font-medium tracking-widest uppercase" href="#">Collections</a>
+<a class="text-[#333333] hover:text-[#C5A059] transition-colors duration-300 text-sm font-medium tracking-widest uppercase" href="#">Weddings</a>
+<a class="text-[#333333] hover:text-[#C5A059] transition-colors duration-300 text-sm font-medium tracking-widest uppercase" href="#">Occasions</a>
+<a class="text-[#C5A059] border-b-2 border-[#C5A059] pb-1 text-sm font-medium tracking-widest uppercase" href="#">Availability</a>
+<a class="text-[#333333] hover:text-[#C5A059] transition-colors duration-300 text-sm font-medium tracking-widest uppercase" href="#">About</a>
+</nav>
+<div class="flex-1 flex items-center justify-end gap-4">
+<button class="text-[#333333] hover:text-[#C5A059] transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[450px] flex items-center justify-center text-center px-6">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover brightness-95" data-alt="Close-up of elegant cream and blush roses in a soft focused bouquet with warm morning light" src="https://lh3.googleusercontent.com/aida/ADBb0uhe6dPCNwzHsB1ERWBK71via9-dB0rVEba3pHXdcgCksXIDVnyROfffghOWgrSM9rLBMYnCvhdK3Wv5pCN2M5NZcob93mPdJAG-6xkVyJmFkBB13-H9g0SLoMs70-6PEqAvo1VFSywK3W86tvnot-HAFMzD5UY8nnSxpBHgPyg_Kd_HiqJIO_wem7o4AU9-06-fwpwZvMDZVvqlKMFi_8h3hXFLOBIOqlO4co4SMsR_u99dagQOzX-Qt975Ujy4fBkhX2iE9Vu0rwk"/>
+<div class="absolute inset-0 bg-background/30 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-6">Check Availability</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+                    Select a date for your floral request. Availability is not guaranteed until confirmed by Ms. Kreations Flowers.
+                </p>
+</div>
+</section>
+<!-- Availability Calendar Section -->
+<section class="py-24 px-8 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Side: Calendar -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-[1.5rem] shadow-sm p-10">
+<div class="flex justify-between items-center mb-12">
+<h3 class="font-headline-md text-headline-md text-on-surface">September 2024</h3>
+<div class="flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-4 text-center">
+<!-- Days of Week -->
+<div class="font-label-caps text-label-caps text-outline py-2">Sun</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Mon</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Tue</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Wed</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Thu</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Fri</div>
+<div class="font-label-caps text-label-caps text-outline py-2">Sat</div>
+<!-- Calendar Grid -->
+<div class="h-14 flex items-center justify-center text-outline-variant">25</div>
+<div class="h-14 flex items-center justify-center text-outline-variant">26</div>
+<div class="h-14 flex items-center justify-center text-outline-variant">27</div>
+<div class="h-14 flex items-center justify-center text-outline-variant">28</div>
+<div class="h-14 flex items-center justify-center text-outline-variant">29</div>
+<div class="h-14 flex items-center justify-center text-outline-variant">30</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">1</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">2</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">3</div>
+<div class="h-14 flex items-center justify-center bg-surface-container-high rounded-xl diagonal-line relative text-outline-variant">4</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">5</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">6</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">7</div>
+<div class="h-14 flex items-center justify-center bg-surface-container-high rounded-xl diagonal-line relative text-outline-variant">8</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">9</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">10</div>
+<div class="h-14 flex items-center justify-center bg-primary-container ring-2 ring-primary-container ring-offset-4 ring-offset-surface-container-lowest rounded-xl text-white font-semibold">11</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">12</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">13</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">14</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">15</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">16</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">17</div>
+<div class="h-14 flex items-center justify-center bg-surface-container-high rounded-xl diagonal-line relative text-outline-variant">18</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">19</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">20</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">21</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">22</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">23</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">24</div>
+<div class="h-14 flex items-center justify-center cursor-pointer hover:bg-secondary-container transition-colors rounded-xl font-medium">25</div>
+</div>
+<div class="mt-12 flex gap-8 items-center justify-center">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full border border-outline"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Available</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Selected</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-surface-container-high diagonal-line"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Unavailable</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Selection Prompt -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="bg-[#FDFCF0] border border-[#D2B48C]/40 rounded-[1.5rem] p-10 shadow-sm flex-1 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-primary mb-2 block">Your Selection</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">You selected September 11, 2024</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Our team manually reviews every request to ensure we can provide the highest level of craftsmanship for your chosen date.
+                    </p>
+<div class="flex flex-col gap-4">
+<button class="bg-primary-container text-on-primary-fixed font-semibold py-4 px-8 rounded-xl hover:opacity-90 transition-opacity">
+                            Continue Request
+                        </button>
+<button class="border border-outline-variant text-on-surface font-semibold py-4 px-8 rounded-xl hover:bg-surface-container-low transition-colors">
+                            Choose Another Date
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Request Form Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Complete Your Request</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Provide a few details and we'll be in touch shortly.</p>
+</div>
+<form class="bg-surface-container-lowest border border-outline-variant rounded-[1.5rem] p-12 shadow-sm space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary-container focus:ring-0 py-3 transition-colors" placeholder="Evelyn Thorne" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary-container focus:ring-0 py-3 transition-colors" placeholder="evelyn@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Phone Number</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary-container focus:ring-0 py-3 transition-colors" placeholder="(555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Selected Date</label>
+<input class="w-full bg-transparent border-b border-outline-variant text-on-surface-variant py-3" disabled="" type="text" value="September 11, 2024"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Service Type</label>
+<select class="w-full bg-transparent border-b border-outline-variant focus:border-primary-container focus:ring-0 py-3 transition-colors appearance-none">
+<option>Custom Floral Arrangement</option>
+<option>Wedding Flowers</option>
+<option>Event Flowers</option>
+<option>Sympathy &amp; Funeral Flowers</option>
+<option>Romantic Setup</option>
+<option>Floral Bar Experience</option>
+<option>Special Request</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline">Message (Tell us about your vision)</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant focus:border-primary-container focus:ring-0 py-3 transition-colors resize-none" placeholder="Share any specific flowers, color palettes, or the mood of your event..." rows="4"></textarea>
+</div>
+<div class="pt-8">
+<button class="w-full bg-primary-container text-on-primary-fixed font-semibold py-5 rounded-xl hover:opacity-95 transition-opacity mb-4" type="submit">
+                            Request This Date
+                        </button>
+<p class="text-center font-body-md text-[13px] text-outline italic">Note: Submitting this form does not guarantee the date. Our team will contact you within 24-48 hours.</p>
+</div>
+</form>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 text-center bg-background">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-6">Planning Something Special?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Choose an available date and tell us what you have in mind. We will review your request and follow up with a personal confirmation and next steps.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary-container text-on-primary-fixed font-semibold py-4 px-12 rounded-xl">Request a Date</button>
+<button class="border border-outline-variant text-on-surface font-semibold py-4 px-12 rounded-xl hover:bg-surface-container-low">Contact Us</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F5F5DC] border-t border-[#D2B48C]/30 w-full">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-16 py-12 gap-8 max-w-full mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<h4 class="font-serif text-lg text-[#333333]">Ms. Kreations Flowers</h4>
+<p class="font-body-md text-xs font-light tracking-wide text-[#333333]">© 2024 Ms. Kreations Flowers. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-xs font-light tracking-wide text-[#333333] hover:text-[#C5A059] transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs font-light tracking-wide text-[#333333] hover:text-[#C5A059] transition-colors" href="#">Terms of Service</a>
+<a class="text-xs font-light tracking-wide text-[#333333] hover:text-[#C5A059] transition-colors" href="#">Contact</a>
+<a class="text-xs font-light tracking-wide text-[#333333] hover:text-[#C5A059] transition-colors" href="#">Care Instructions</a>
+</div>
+<div class="flex gap-6">
+<button class="text-[#333333] hover:text-[#C5A059] transition-colors">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</button>
+<button class="text-[#333333] hover:text-[#C5A059] transition-colors">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+</div>
+</div>
+</footer>
+</body></html>
